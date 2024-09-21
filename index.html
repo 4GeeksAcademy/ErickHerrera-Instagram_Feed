@@ -20,7 +20,40 @@
             </a>
             <div class="d-flex align-items-center">
                 <!-- Botón "Create new post" -->
-                <button class="btn btn-success me-2">Create new post</button>
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Create new
+                    post</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create New Post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="recipient-name" class="col-form-label"><b>Caption:</b></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Add the caption of your Post"></textarea>
+                            </div>        
+                                <div class="modal-body">
+                                    <button class="btn btn-light border">
+                                        <i class="fa-solid fa-camera me-2"></i>
+                                      </button>
+                                      
+                                      <button class="btn btn-light border">
+                                        <i class="fa-solid fa-location-dot me-2"></i>
+                                      </button>
+                                </div>
+                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success ">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Menú desplegable con ícono -->
                 <div class="dropdown">
@@ -117,7 +150,9 @@
                     <div class="w-100 fs-4">My little dog Sasha!</div>
                     <small class="align-bottom">19/09</small>
                 </div>
-                <img style="object-fit: cover;" src="https://cdn.pixabay.com/photo/2022/10/06/11/01/rottweiler-7502443_640.jpg" class="img-fluid w-100 col-12" alt=""/>
+                <img style="object-fit: cover;"
+                    src="https://cdn.pixabay.com/photo/2022/10/06/11/01/rottweiler-7502443_640.jpg"
+                    class="img-fluid w-100 col-12" alt="" />
                 <div class="p-2">
                     <strong>785 Likes</strong>
                     <p>This is an example of a very good photo that you can post on instagram</p>
@@ -130,7 +165,8 @@
                     <div class="w-100 fs-4">Beautiful world</div>
                     <small>19/09</small>
                 </div>
-                <img style="object-fit: cover;" src="https://img.freepik.com/free-photo/lightning-storm_1268-27624.jpg" class="img-fluid w-100 col-12" alt=""/>
+                <img style="object-fit: cover;" src="https://img.freepik.com/free-photo/lightning-storm_1268-27624.jpg"
+                    class="img-fluid w-100 col-12" alt="" />
                 <div class="p-2">
                     <strong>5468 Likes</strong>
                     <p>This is an example of a very good photo that you can post on instagram</p>
@@ -143,27 +179,29 @@
                     <div class="w-100 fs-4">My next truck</div>
                     <small>19/09</small>
                 </div>
-                <img style="object-fit: cover;" src="https://www.mad4wheels.com/img/free-car-images/mobile/19448/ford-ranger-raptor-2023-663862.jpg" class="img-fluid w-100 col-12" alt=""/>
+                <img style="object-fit: cover;"
+                    src="https://www.mad4wheels.com/img/free-car-images/mobile/19448/ford-ranger-raptor-2023-663862.jpg"
+                    class="img-fluid w-100 col-12" alt="" />
                 <div class="p-2">
                     <strong>123 Likes</strong>
                     <p>This is an example of a very good photo that you can post on instagram</p>
                 </div>
             </div>
         </div>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('showGridBtn').onclick = function () {
-            document.getElementById('gridSection').style.display = 'block';
-            document.getElementById('listSection').style.display = 'none';
-        };
 
-        document.getElementById('showListBtn').onclick = function () {
-            document.getElementById('gridSection').style.display = 'none';
-            document.getElementById('listSection').style.display = 'block';
-        };
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.getElementById('showGridBtn').onclick = function () {
+                document.getElementById('gridSection').style.display = 'block';
+                document.getElementById('listSection').style.display = 'none';
+            };
+
+            document.getElementById('showListBtn').onclick = function () {
+                document.getElementById('gridSection').style.display = 'none';
+                document.getElementById('listSection').style.display = 'block';
+            };
+        </script>
 </body>
 
 </html>
